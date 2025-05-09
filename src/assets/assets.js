@@ -75,24 +75,26 @@ export const assets = {
 }
 
 export const cities = [
-    "Dubai",
-    "Singapore",
-    "New York",
-    "London",
+    "Colombo",
+    "Kandy",
+    "Galle",
+    "Ella",
+    "Trincomalee",
+    "Negombo",
 ];
 
 // Exclusive Offers Dummy Data
 export const exclusiveOffers = [
-    { _id: 1, title: "Summer Escape Package", description: "Enjoy a complimentary night and daily breakfast", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
-    { _id: 2, title: "Romantic Getaway", description: "Special couples package including spa treatment", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
-    { _id: 3, title: "Luxury Retreat", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
+    { _id: 1, title: "Cultural Experience Package", description: "Enjoy traditional Sri Lankan hospitality with daily breakfast and cultural tours", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
+    { _id: 2, title: "Beach Getaway", description: "Special coastal retreat with complimentary spa treatment", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
+    { _id: 3, title: "Hill Country Retreat", description: "Book 60 days in advance and save on your stay at our luxury properties in Sri Lanka's scenic highlands.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
 ]
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "QuickStay exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through QuickStay. Their recommendations never disappoint!" }
+    { id: 1, name: "Priya Sharma", address: "Mumbai, India", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "My stay in Sri Lanka was magnificent! EliteStays found me the perfect boutique hotel in Kandy with stunning views of the hills." },
+    { id: 2, name: "James Wilson", address: "London, UK", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "EliteStays exceeded my expectations. The beach villa in Trincomalee was absolute paradise, and the booking process was seamless!" },
+    { id: 3, name: "Kumari Perera", address: "Colombo, Sri Lanka", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "As a local, I use EliteStays for staycations. Their curated collection of properties represents the best of Sri Lankan hospitality!" }
 ];
 
 // Facility Icon
@@ -102,39 +104,40 @@ export const facilityIcons = {
     "Room Service": assets.roomServiceIcon,
     "Mountain View": assets.mountainIcon,
     "Pool Access": assets.poolIcon,
+    "Beach Access": assets.poolIcon, // Reusing pool icon for beach - consider adding a beach-specific icon
 };
 
 // For Room Details Page
 export const roomCommonData = [
     { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
-    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
-    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
+    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows EliteStays' strict cleaning standards." },
+    { icon: assets.locationFilledIcon, title: "Prime Location", description: "95% of guests rated the location 5 stars." },
+    { icon: assets.heartIcon, title: "Sri Lankan Hospitality", description: "100% of guests praised our warm welcome and service." },
 ];
 
 // User Dummy Data
 export const userDummyData = {
     "_id": "user_2unqyL4diJFP1E3pIBnasc7w8hP",
-    "username": "Great Stack",
-    "email": "user.greatstack@gmail.com",
+    "username": "Asanka Perera",
+    "email": "asanka.perera@gmail.com",
     "image": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJ2N2c5YVpSSEFVYVUxbmVYZ2JkSVVuWnFzWSJ9",
     "role": "hotelOwner",
     "createdAt": "2025-03-25T09:29:16.367Z",
     "updatedAt": "2025-04-10T06:34:48.719Z",
     "__v": 1,
     "recentSearchedCities": [
-        "New York"
+        "Colombo"
     ]
 }
 
 // Hotel Dummy Data
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Urbanza Suites",
-    "address": "Main Road  123 Street , 23 Colony",
-    "contact": "+0123456789",
+    "name": "Ceylon Heritage Resort",
+    "address": "42 Galle Face Terrace, Colombo 03",
+    "contact": "+94112345678",
     "owner": userDummyData,
-    "city": "New York",
+    "city": "Colombo",
     "createdAt": "2025-04-10T06:22:11.663Z",
     "updatedAt": "2025-04-10T06:22:11.663Z",
     "__v": 0
@@ -145,9 +148,9 @@ export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "roomType": "Deluxe Ocean View",
+        "pricePerNight": 22000, // In Sri Lankan Rupees
+        "amenities": ["Room Service", "Ocean View", "Pool Access"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -157,9 +160,9 @@ export const roomsDummyData = [
     {
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "roomType": "Superior King Room",
+        "pricePerNight": 18000, // In Sri Lankan Rupees
+        "amenities": ["Room Service", "City View", "Pool Access"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -169,8 +172,8 @@ export const roomsDummyData = [
     {
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 249,
+        "roomType": "Premium Suite",
+        "pricePerNight": 36000, // In Sri Lankan Rupees
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
@@ -181,8 +184,8 @@ export const roomsDummyData = [
     {
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
-        "roomType": "Single Bed",
-        "pricePerNight": 199,
+        "roomType": "Standard Twin Room",
+        "pricePerNight": 15000, // In Sri Lankan Rupees
         "amenities": ["Free WiFi", "Room Service", "Pool Access"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
@@ -191,8 +194,6 @@ export const roomsDummyData = [
         "__v": 0
     }
 ]
-
-
 
 // User Bookings Dummy Data
 export const userBookingsDummyData = [
@@ -203,10 +204,10 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
-        "totalPrice": 299,
-        "guests": 1,
+        "totalPrice": 18000,
+        "guests": 2,
         "status": "pending",
-        "paymentMethod": "Stripe",
+        "paymentMethod": "Card Payment",
         "isPaid": true,
         "createdAt": "2025-04-10T06:42:01.529Z",
         "updatedAt": "2025-04-10T06:43:54.520Z",
@@ -219,8 +220,8 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
-        "totalPrice": 399,
-        "guests": 1,
+        "totalPrice": 22000,
+        "guests": 2,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
         "isPaid": false,
@@ -235,7 +236,7 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
-        "totalPrice": 199,
+        "totalPrice": 15000,
         "guests": 1,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
@@ -249,7 +250,7 @@ export const userBookingsDummyData = [
 // Dashboard Dummy Data
 export const dashboardDummyData = {
     "totalBookings": 3,
-    "totalRevenue": 897,
+    "totalRevenue": 55000, // Total in Sri Lankan Rupees
     "bookings": userBookingsDummyData
 }
 

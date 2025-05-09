@@ -20,7 +20,7 @@ const ListRoom = () => {
               <th className='py-3 px-4 text-gray-800 font-medium'>Name</th>
               <th className='py-3 px-4 text-gray-800 font-medium
               max-sm:hidden'>Facility</th>
-              <th className='py-3 px-4 text-gray-800 font-medium'>Price / Night</th>
+              <th className='py-3 px-4 text-gray-800 font-medium'>Price / Night(Rs)</th>
               <th className='py-3 px-4 text-gray-800 font-medium 
               text-center'>Actions</th>
             </tr>
